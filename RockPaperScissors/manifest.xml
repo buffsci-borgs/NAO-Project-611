@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="start1-0af44b">
+<package uuid="gesturereco-3e85db" version="0.0.0">
  <names>
   <name lang="en_US">Untitled</name>
  </names>
@@ -12,7 +12,7 @@
  <contents>
   <behaviorContent path="behavior_1">
    <userRequestable/>
-   <nature></nature>
+   <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
  </contents>
