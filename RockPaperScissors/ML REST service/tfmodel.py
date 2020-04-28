@@ -36,14 +36,14 @@ def detectGesture():
     for i in range(3):
         if pred[0][i]*100 > 50:
             if i == 0:
-                gesture = "Scissors"
+                gesture = "rock"
             elif i == 1:
-                gesture = "Paper"
+                gesture = "paper"
             elif i == 2:
-                gesture = "Rock"
+                gesture = "scissors"
             break
     print(gesture)
-    return json.dumps(gesture)
+    return gesture
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0')
