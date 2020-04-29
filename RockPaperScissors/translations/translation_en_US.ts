@@ -65,10 +65,9 @@
     <context>
         <name>behavior_1/behavior.xar:/Paper (3)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>I choose paper</source>
             <comment>Text</comment>
-            <translation type="unfinished">I choose paper</translation>
+            <translation type="obsolete">I choose paper</translation>
         </message>
     </context>
     <context>
@@ -92,10 +91,9 @@
     <context>
         <name>behavior_1/behavior.xar:/Rock (3)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>I choose rock</source>
             <comment>Text</comment>
-            <translation type="unfinished">I choose rock</translation>
+            <translation type="obsolete">I choose rock</translation>
         </message>
     </context>
     <context>
@@ -239,10 +237,9 @@
     <context>
         <name>behavior_1/behavior.xar:/Scissor (2)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>I choose scissors</source>
             <comment>Text</comment>
-            <translation type="unfinished">I choose scissors</translation>
+            <translation type="obsolete">I choose scissors</translation>
         </message>
     </context>
 </TS>
