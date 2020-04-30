@@ -14,7 +14,7 @@
     <Timeline enable="0">
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
-          <Diagram scale="141.421">
+          <Diagram scale="84.0896">
             <Box name="Python Script" id="1" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="132" y="263">
               <bitmap>media/images/box/box-python-script.png</bitmap>
               <script language="4">
@@ -469,8 +469,8 @@ class MyClass(GeneratedClass):
               <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
               <Output name="wordRecognized" type="3" type_size="1" nature="2" inner="0" tooltip="Word recognized with a confidence higher than the threshold set in the box parameters." id="5" />
               <Output name="onNothing" type="1" type_size="1" nature="2" inner="0" tooltip="Nothing has been understood." id="6" />
-              <Parameter name="Word list" inherits_from_parent="0" content_type="3" value="next page;startover;page 1;page 2;page 3;page 4;page 5;page 6;page 7;page 8;page 9;page 10;page 11;page 12;page 13;page 14;page 15;page 16;page 17;page 18;page 19;page 20;" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" />
-              <Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="50" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="8" />
+              <Parameter name="Word list" inherits_from_parent="0" content_type="3" value="next page;startover;page 1;page 2;page 3;page 4;page 5;page 6;page 7;page 8;page 9;page 10;page 11;page 12;page 13;page 14;page 15;page 16;page 17;page 18;page 19;page 20;read;" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" />
+              <Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="32" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="8" />
               <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="9" />
               <Resource name="Speech recognition" type="Lock" timeout="0" />
             </Box>
@@ -479,6 +479,7 @@ class MyClass(GeneratedClass):
               <script language="4">
                 <content>
                   <![CDATA[import time
+import qi
 from urllib2 import urlopen
 import os.path
 from os import path
@@ -519,7 +520,7 @@ class MyClass(GeneratedClass):
             result = f.read()
             f.close()
         else:
-            page = urlopen('https://raw.githubusercontent.com/harshalitalele/BookReading/master/An%20Idea.txt')
+            page = urlopen('https://raw.githubusercontent.com/buffsci-borgs/NAO-Project-611/master/ReadBook/An%20Idea.txt')
             page.readline()
             page.readline()
 
@@ -529,12 +530,13 @@ class MyClass(GeneratedClass):
             a_dict[book_page]=[]
 
             while line:
-              line = page.readline().decode('utf-8')
+              line = page.readline()
               if "page" in line:
                 book_page = line.replace("-","").rstrip()
                 a_dict[book_page]=[]
               else:
                 a_dict[book_page].append(line.rstrip())
+            #qi.error("myfoo.bar", 'fan123' + str(a_dict))
 
 #            f = open('test.txt', 'w')
 #            f.write(result)
@@ -551,7 +553,7 @@ class MyClass(GeneratedClass):
                 last_page_read=last_page_read
             elif "page" in p:
                 last_page_read=int(p.split(" ")[1])
-            elif "startover" in p:
+            elif "startover" or "read" in p:
                 last_page_read=1
 
             sentence += "Reading page "+str(last_page_read)+"..."
