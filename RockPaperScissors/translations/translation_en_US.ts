@@ -4,19 +4,25 @@
     <context>
         <name>behavior_1/behavior.xar:/Default</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Hello, I did not understand your input. Please go again!</source>
             <comment>Text</comment>
-            <translation type="unfinished">Hello, I did not understand your input. Please go again!</translation>
+            <translation type="obsolete">Hello, I did not understand your input. Please go again!</translation>
         </message>
     </context>
     <context>
         <name>behavior_1/behavior.xar:/Default (1)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Hello, I did not understand your input.</source>
             <comment>Text</comment>
-            <translation type="unfinished">Hello, I did not understand your input.</translation>
+            <translation type="obsolete">Hello, I did not understand your input.</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Default (2)</name>
+        <message>
+            <source>Hello, I did not understand your input.</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Hello, I did not understand your input.</translation>
         </message>
     </context>
     <context>
@@ -47,19 +53,17 @@
     <context>
         <name>behavior_1/behavior.xar:/Paper</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Hello, you said paper</source>
             <comment>Text</comment>
-            <translation type="unfinished">Hello, you said paper</translation>
+            <translation type="obsolete">Hello, you said paper</translation>
         </message>
     </context>
     <context>
         <name>behavior_1/behavior.xar:/Paper (2)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>I choose paper</source>
             <comment>Text</comment>
-            <translation type="unfinished">I choose paper</translation>
+            <translation type="obsolete">I choose paper</translation>
         </message>
     </context>
     <context>
@@ -73,19 +77,17 @@
     <context>
         <name>behavior_1/behavior.xar:/Rock</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Hello, you said rock</source>
             <comment>Text</comment>
-            <translation type="unfinished">Hello, you said rock</translation>
+            <translation type="obsolete">Hello, you said rock</translation>
         </message>
     </context>
     <context>
         <name>behavior_1/behavior.xar:/Rock (2)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>I choose rock</source>
             <comment>Text</comment>
-            <translation type="unfinished">I choose rock</translation>
+            <translation type="obsolete">I choose rock</translation>
         </message>
     </context>
     <context>
@@ -168,10 +170,14 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>What did you pick?</source>
             <comment>Text</comment>
-            <translation type="unfinished">What did you pick?</translation>
+            <translation type="obsolete">What did you pick?</translation>
+        </message>
+        <message>
+            <source>Hey Preeti</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Hey Preeti</translation>
         </message>
     </context>
     <context>
@@ -210,28 +216,25 @@
     <context>
         <name>behavior_1/behavior.xar:/Say (9)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Hello</source>
             <comment>Text</comment>
-            <translation>Hello</translation>
+            <translation type="vanished">Hello</translation>
         </message>
     </context>
     <context>
         <name>behavior_1/behavior.xar:/Scissor</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Hello, you said scissors</source>
             <comment>Text</comment>
-            <translation type="unfinished">Hello, you said scissors</translation>
+            <translation type="obsolete">Hello, you said scissors</translation>
         </message>
     </context>
     <context>
         <name>behavior_1/behavior.xar:/Scissor (1)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>I choose scissors</source>
             <comment>Text</comment>
-            <translation type="unfinished">I choose scissors</translation>
+            <translation type="obsolete">I choose scissors</translation>
         </message>
     </context>
     <context>
